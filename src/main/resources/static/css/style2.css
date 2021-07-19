@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background: #fafafa;*/
+}
+
+/*noinspection CssUnknownTarget*/
+.main {
+    position: relative;
+    height: 100vh;
+    width: 99vw;
+    background: url('/images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main form {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.main form .registration {
+    position: relative;
+    display: flex;
+    border-radius: 100rem;
+    height: 50px;
+    width: 700px;
+    background: #008080;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    transform: translate(-0%, -80%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+}
+
+.main form input[type="PASSWORD"] {
+    margin-bottom: 8%;
+    text-align: center;
+    height: 30px;
+    width: 700px;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    /*-webkit-appearance: none;*/
+    border: none;
+    border-bottom: 2px rgba(225, 225, 225, 1) solid;
+    transition: 1s ease-in-out;
+}
+
+.main form input[type="text"]:focus {
+    border-bottom: 2px solid #017fb5;
+}
+
+.main form input[type="PASSWORD"]:focus {
+    border-bottom: 2px solid #017fb5;
+}
+
+.main form input[type="submit"] {
+    height: 30px;
+    width: 300px;
+    background: #18C491;
+    transition: 1.5s ease-in-out;
+    font-size: 22px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 2rem;
+}
+
+.main form input[type="submit"]:hover {
+    background: #015a;
+}
+
+.main form p button {
+    color: #000;
+    height: 30px;
+    width: 300px;
+    background: #008080;
+    transition: 1.5s ease-in-out;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 2rem;
+}
+
+#enc-btn {
+    width: 550px;
+    font-size: 18px;
+    text-decoration: none;
+    background: #008080;
+    border-radius: 50px;
+    color: #fff;
+    padding: 12px;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+
+#dec-btn {
+    width: 550px;
+    font-size: 18px;
+    text-decoration: none;
+    background: #008080;
+    border-radius: 50px;
+    color: #fff;
+    padding: 12px;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+#enc-btn:hover, #dec-btn:hover {
+    cursor: pointer;
+    -moz-box-shadow: 0 0 5px #049c9c;
+    -webkit-box-shadow: 0 0 5px #049c9c;
+    box-shadow: 0 0 5px #049c9c;
+    transition: all 200ms ease-in-out;
+}
+
+
+.upload {
+    font-size: 16px;
+    background: none;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    width: 350px;
+    outline: none;
+}
+
+::-webkit-file-upload-button {
+    color: white;
+    background: #25383C;
+    padding: 0;
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+}
+
+
+.error {
+    margin-top: .50rem;
+    margin-bottom: 0.50rem;
+    color: #dc3545 !important;
+    font-size: .875em;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style2.css}">
+    <script th:src="@{/js/jquery.js}"></script>
+    <title>DECRYPT</title>
+</head>
+
+<body>
+<div class="main">
+    <form th:action="@{/decrypt}" method="post" name="f1" class="f1" id="dec-form" enctype="multipart/form-data">
+        <div class="registration">UPLOAD FILE TO DECRYPT</div>
+        <div class="container">
+            <input type="file" class="upload" id="dec-file" name="dec-file"/><br><br><br>
+        </div>
+        <span class="error" id="sfd-error">Please select file to decrypt</span>
+
+        <label for="dop"> PASSWORD</label>
+        <input type="PASSWORD" name="dop" id="dop" required="">
+        <label for="dcp"> CONFIRM PASSWORD</label>
+        <input type="PASSWORD" name="dcp" id="dcp" required="">
+        <span class="error" id="fdk-error">Invalid or mismatched passwords</span>
+
+        <br>
+        <button type="button" id="dec-btn" onclick="decryptFile()">DECRYPT</button>
+    </form>
+</div>
+
+<script type="text/javascript" th:src="@{/js/script.js}"></script>
+<script type="text/javascript">
+    (function (d, m) {
+        const kommunicateSettings =
+            {"appId": "17e217889a9bee5cd4e0b1722ae4fb9a7", "popupWidget": true, "automaticChatOpenOnNavigation": true};
+        const s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        const h = document.getElementsByTagName("head")[0];
+        h.appendChild(s);
+        window.kommunicate = m;
+        m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+</script>
+</body>
+
+</html>

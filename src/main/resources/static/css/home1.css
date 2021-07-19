@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background: #fafafa;*/
+}
+
+/*noinspection CssUnknownTarget*/
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('/images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main p {
+    font-size: 30px;
+}
+
+.main form {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.main form .login {
+    position: relative;
+    display: flex;
+    border-radius: 100rem;
+    height: 80px;
+    width: 1000px;
+    background: #008080;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    transform: translate(-0%, -80%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+}
+
+
+.main form input[type="file"] {
+    margin-top: 0;
+    margin-bottom: 8%;
+    text-align: center;
+    height: 30px;
+    width: 400px;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+
+.main form input[type="text"]:focus {
+    border-bottom: 2px solid #017fb5;
+}
+
+.main form .encrypt input[type="submit"] {
+    position: relative;
+    display: flex;
+    border-radius: 100rem;
+    height: 40px;
+    width: 300px;
+    background: #008080;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    bottom: 100%;
+    transform: translate(10%, -0%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+}
+
+
+.main form input[type="submit"] {
+    position: relative;
+    display: flex;
+    border-radius: 100rem;
+    height: 40px;
+    width: 300px;
+    background: #008080;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    bottom: 100%;
+    transform: translate(115%, -0%);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+}
+
+.main form input[type="submit"]:hover {
+    background: #000;
+}
+
+.choose_file #choose_file {
+    outline: none;
+    opacity: 0;
+    width: 0;
+}
+
+.main-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+
+.enc-link {
+    width: 250px;
+    text-decoration: none;
+    background: #008080;
+    border-radius: 50px;
+    color: #fff;
+    padding: 12px;
+}
+
+.dec-link {
+    width: 250px;
+    text-decoration: none;
+    background: #008080;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 12px;
+}
+
+
+.enc-link:hover, .dec-link:hover {
+    cursor: pointer;
+    -moz-box-shadow: 0 0 5px #049c9c;
+    -webkit-box-shadow: 0 0 5px #049c9c;
+    box-shadow: 0 0 5px #049c9c;
+    transition: all 200ms ease-in-out;
+}
